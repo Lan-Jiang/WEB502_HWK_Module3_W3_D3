@@ -1,0 +1,28 @@
+{
+  "name": "web502_hwk_module3_w3_d3",
+  "version": "1.0.0",
+  "description": "WEB502_HWK_Module3_W3_D3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "build-css": "node-sass --include-path scss scss/styles.scss -o css/",
+    "scss": "node-sass scss -o css",
+    "start": "npm run watch:all",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lan-Jiang/WEB502_HWK_Module3_W3_D3.git"
+  },
+  "author": "Lan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lan-Jiang/WEB502_HWK_Module3_W3_D3/issues"
+  },
+  "homepage": "https://github.com/Lan-Jiang/WEB502_HWK_Module3_W3_D3#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

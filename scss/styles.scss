@@ -1,10 +1,78 @@
 /* Variables */
+@import 'colors';
+@import 'nav';
 
+
+// Global
+* {
+    background-color: $color-html-bg; /*color-html-bg*/
+    font-family: Arial, Helvetica, Sans-Serif;
+}
+
+/* Header and Footer */
+header {
+    margin-left: 70px;
+}
+footer {
+    margin-top: 20px;
+    margin-left: 70px;
+}
 
 /* Nest Main */
 main {
     width: 1350px;
     min-height:535px;
+    background-color: $color-main-bg; /*color-main-bg*/
+    height: 500px;
+    margin: 20px auto;
+    padding: 1em;
+    width: 95%;
+    display: flex;
+
+    * {
+        background-color: $color-main-ele-bg;
+    }
+
+    #intro-text {
+        background-color: $color-main-ele-bg; /*color-main-ele-bg*/
+        height: 100%;
+        width: 40%;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #intro-text span {
+        font-family: 'Sacramento', cursive;
+    }
+    #intro-text .submit-buttton {
+        background-color: $color-btn-bg; /*color-btn-bg*/
+        height: 40px;
+        border: none;
+    
+    }
+    #intro-image {
+        height: 100%;
+        width: 60%; 
+        position: relative;
+    
+    }
+    #intro-image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
 }
 
 // Mixin or Extend for button
+@mixin important-text {
+    color: $color-btn-txt;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .submit-buttton {
+    @include important-text;
+  }

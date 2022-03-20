@@ -1,0 +1,78 @@
+* {
+    background-color: rgb(218, 170, 14); /*color-html-bg*/
+    font-family: Arial, Helvetica, Sans-Serif;
+}
+header {
+    margin-left: 70px;
+}
+footer {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  
+  nav li {
+    display: inline-block; }
+  
+  nav a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none; 
+    color:rgb(255, 255, 255)} /*color-nav*/
+  
+main {
+    width: 1350px;
+    min-height:535px;
+    background-color: rgb(255, 255, 255); /*color-main-bg*/
+    height: 500px;
+    margin: 20px auto;
+    padding: 1em;
+    width: 95%;
+    display: flex;
+}
+
+main * {
+    background-color: rgb(212, 213, 216); /*color-main-ele-bg*/
+}
+
+main #intro-text {
+    background-color: rgb(212, 213, 216); /*color-main-ele-bg*/
+    height: 100%;
+    width: 40%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main #intro-text span {
+    font-family: 'Sacramento', cursive;
+}
+
+main #intro-text .submit-buttton {
+    background-color: rgb(218, 170, 14); /*color-btn-bg*/
+    color:rgb(250, 250, 250);
+    height: 40px;
+    border: none;
+
+}
+
+main #intro-image {
+    height: 100%;
+    width: 60%; 
+    position: relative;
+
+}
+
+main #intro-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
