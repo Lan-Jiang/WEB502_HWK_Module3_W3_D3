@@ -1,6 +1,6 @@
 /* Variables */
 @import 'colors';
-@import 'nav';
+
 
 
 // Global
@@ -17,6 +17,8 @@ footer {
     margin-top: 20px;
     margin-left: 70px;
 }
+
+@import 'nav';
 
 /* Nest Main */
 main {

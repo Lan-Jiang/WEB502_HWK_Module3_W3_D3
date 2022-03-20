@@ -1,4 +1,17 @@
 /* Variables */
+* {
+  background-color: #daaa0e;
+  /*color-html-bg*/
+  font-family: Arial, Helvetica, Sans-Serif; }
+
+/* Header and Footer */
+header {
+  margin-left: 70px; }
+
+footer {
+  margin-top: 20px;
+  margin-left: 70px; }
+
 /* Nest Nav */
 nav ul {
   margin: 0;
@@ -13,19 +26,6 @@ nav a {
   padding: 6px 12px;
   text-decoration: none;
   color: white; }
-
-* {
-  background-color: #daaa0e;
-  /*color-html-bg*/
-  font-family: Arial, Helvetica, Sans-Serif; }
-
-/* Header and Footer */
-header {
-  margin-left: 70px; }
-
-footer {
-  margin-top: 20px;
-  margin-left: 70px; }
 
 /* Nest Main */
 main {
